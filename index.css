@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
 }
 
 .cuerpo-principal {
-	background: yellow;
+	background: #000000;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -17,72 +19,69 @@
 	justify-content: space-between;
 	padding: 6px auto;
 	align-items: center;
+	height: 100px;
 }
 
 .titulo-encabezado {
 	color: #ffffff;
-	margin-left: 10px;
+	margin-left: 3rem;
+	font-size: 3rem;
+	font-family: "Open Sans", sans-serif
 }
 
-.inputs-principales {
+.contenido-navegador {
 	display: flex;
-	gap: 10px;
-	margin-right: 10px;
+	justify-content: center;
 }
 
-.texto-label{
+.navegador ul{
+	display: flex;
+	gap: 2em;
+	margin-right: 3rem;
+	list-style: none;
+}
+
+.navegador ul li {
 	color: #ffffff;
+	font-family: "Open Sans", sans-serif
 }
-
 
 .contenido-principal {
 	display: flex;
+	align-items: center;
+	justify-content: center;
 	flex: 1;
-	align-items: center;
-	gap: 5px;
-	justify-content: center;
 }
 
-.slide-libros {
-	background: darkblue;
-	width: 40%;
-	display: flex;
-	flex-direction: row-reverse;
-	padding: 5px;
-}
-
-.contenido-titulo-texto-principal {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	gap: 5px;
-	border: solid 1px darkblue;
+.contenido-texto {
 	width: 50%;
-	max-width: 2000px;
-	height: 500px;
-	padding: 5px;
-	margin-left: 5px;
-	align-items: center;
-	font-size: 2rem;
-}
-
-.contenido-boton-descripcion {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	gap: 5px;
-	margin-right: 5px;
-	align-items: center;
+	margin-left: 5rem;
 }
 
-.portada-libro {
-	width: 320px;
-}
-
-.texto-titulo-parrafo {
+.contenedor-imagen {
+	width: 50%;
+	height: 600px;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+}
+
+h1 {
+	font-size: 4rem;
+	color: #ffffff;
+	font-family: "Open Sans", sans-serif
+}
+
+p {
+	font-size: 2rem;
+	color: #ffffff;
+	font-family: "Open Sans", sans-serif
+}
+
+.imagen-inicio {
+	height: 100%;
+	border: solid 1px darkgrey;
 }
 
 .pie-pagina {
@@ -90,4 +89,9 @@
 	color: #ffffff;
 	padding: 10px;
 	text-align: center;
+	font-family: "Open Sans", sans-serif
+}
+
+@media (min-width: 1024px) {
+
 }
