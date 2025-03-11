@@ -82,6 +82,12 @@ p {
 .imagen-inicio {
 	height: 100%;
 	border: solid 1px darkgrey;
+	opacity: 1;
+	transition: opacity 1s ease-in-out;
+}
+
+.imagen-inicio-oscurecer {
+	opacity: 0;
 }
 
 .pie-pagina {
@@ -90,8 +96,4 @@ p {
 	padding: 10px;
 	text-align: center;
 	font-family: "Open Sans", sans-serif
-}
-
-@media (min-width: 1024px) {
-
 }
