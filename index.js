@@ -1,21 +1,20 @@
-const contenedorImagen = document.querySelector('.contenedor-imagen');
+const imagenPortada = document.getElementById('portada-libro');
 
-console.log(contenedorImagen);
-
-const delay = (ms) => {
-	return new Promise(resolve => setTimeout(resolve,ms));
-}
+const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 async function cambiarImagen() {
 	let nroPortada = 1;
-	while(nroPortada === 1 || nroPortada === 2) {
-		let portada = `<img src="images/mangas-inicio/${nroPortada}.jpg" class="imagen-inicio" id="portada-libro">`;
-		await delay(1500);	
-		nroPortada++;
-		contenedorImagen.innerHTML = portada;
-		if (nroPortada > 2) {nroPortada = 1}
+	while (true) {
+		await delay(1500);
+		imagenPortada.classList.add('imagen-inicio-oscurecer');
+		
+		await delay(1000); 
+		nroPortada = nroPortada === 1 ? 2 : 1;
+		imagenPortada.src = `images/mangas-inicio/${nroPortada}.jpg`;
+		
+		await delay(50); 
+		imagenPortada.classList.remove('imagen-inicio-oscurecer');
 	}
 }
-
 
 cambiarImagen();
