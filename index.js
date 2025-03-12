@@ -6,7 +6,6 @@ async function cambiarImagen() {
 	let nroPortada = 1;
 
 	while (true) {
-
 		await delay(1500);
 		imagenPortada.classList.add('imagen-inicio-oscurecer');
 		
@@ -20,10 +19,8 @@ async function cambiarImagen() {
 		
 		await delay(50); 
 		imagenPortada.classList.remove('imagen-inicio-oscurecer');
-		
-				
-	
-		// corregir el tema de las de las transiciones
 	}}
 
 cambiarImagen();
+
+// agregar el efecto de desplazamiento y transicion para el texto inical de la pagina
