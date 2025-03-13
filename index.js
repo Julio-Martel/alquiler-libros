@@ -1,4 +1,5 @@
 const imagenPortada = document.getElementById('portada-libro');
+const iconoMenu = document.querySelector('.ico-menu');
 
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -23,4 +24,3 @@ async function cambiarImagen() {
 
 cambiarImagen();
 
-// agregar el efecto de desplazamiento y transicion para el texto inical de la pagina
