@@ -122,6 +122,8 @@ p {
 	.encabezado-principal {
 		background: #000000;
 		width: 100%;
+		display: flex;
+		align-items: center;
 	}	
 
 	.titulo-encabezado {
@@ -133,4 +135,41 @@ p {
 		display: none ;
 	}
 
+	.ico-menu {
+		width: 100%;
+		max-width: 50px;
+	}
+
+	.modal-menu {
+		display: none;
+	}
+
+	.contenido-principal {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.contenedor-imagen {
+		height: 450px;
+		display: flex;
+		padding: 1rem;
+	}
+
+	.contenido-texto {
+		margin-left: 0;
+		width: 90%;
+		padding: 1rem;
+	}
+
+	h1 {
+		font-size: 2rem;
+		text-align: left;
+	}
+
+	p {
+		font-size: 1rem;
+
+	}
+
 }
+
