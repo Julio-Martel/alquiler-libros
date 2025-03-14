@@ -110,6 +110,11 @@ p {
 	opacity: 0;
 }
 
+
+.navegador-wrap {
+	display: none;
+}
+
 .pie-pagina {
 	background: #000000;
 	color: #ffffff;
@@ -135,6 +140,10 @@ p {
 		display: none ;
 	}
 
+	.navegador-wrap {
+		display: flex;
+	}
+
 	.ico-menu {
 		width: 100%;
 		max-width: 50px;
@@ -142,6 +151,15 @@ p {
 
 	.modal-menu {
 		display: none;
+		background: rgba(0, 0, 0, 0.5);
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		justify-content: center;
+		align-items: center;
+		top: 0;
+		left: 0;
+		z-index: 1;
 	}
 
 	.contenido-principal {
@@ -158,7 +176,7 @@ p {
 	.contenido-texto {
 		margin-left: 0;
 		width: 90%;
-		padding: 1rem;
+		padding: 5px;
 	}
 
 	h1 {
