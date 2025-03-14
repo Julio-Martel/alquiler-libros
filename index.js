@@ -1,5 +1,7 @@
 const imagenPortada = document.getElementById('portada-libro');
 const iconoMenu = document.querySelector('.ico-menu');
+const modalMenu = document.querySelector('.modal-menu');
+const botonClose = document.querySelector('.close');
 
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -24,3 +26,12 @@ async function cambiarImagen() {
 
 cambiarImagen();
 
+iconoMenu.addEventListener('click', () => {
+	modalMenu.style.display = "flex";
+	iconoMenu.style.display = "none";
+});
+
+botonClose.addEventListener('click', () => {
+	modalMenu.style.display = "none";
+	iconoMenu.style.display = "flex";
+})
