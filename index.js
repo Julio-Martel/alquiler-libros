@@ -28,10 +28,10 @@ cambiarImagen();
 
 iconoMenu.addEventListener('click', () => {
 	modalMenu.style.display = "flex";
-	iconoMenu.style.display = "none";
+	iconoMenu.style.opacity = "0";
 });
 
 botonClose.addEventListener('click', () => {
 	modalMenu.style.display = "none";
-	iconoMenu.style.display = "flex";
+	iconoMenu.style.opacity = "1";
 })
