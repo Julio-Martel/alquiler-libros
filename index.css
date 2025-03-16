@@ -7,8 +7,7 @@
 }
 
 .cuerpo-principal {
-	background: url('images/mangas-inicio/fondo3.png');
-	background-size: cover;
+	background: linear-gradient(darkred, darkorange);
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -125,6 +124,7 @@ p {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+
 	.encabezado-principal {
 		background: #000000;
 		width: 100%;
@@ -215,6 +215,7 @@ p {
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
+
 	.encabezado-principal {
 		background: #000000;
 		width: 100%;
